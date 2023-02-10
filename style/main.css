@@ -34,11 +34,14 @@ ul{
 
 
 .todo-section{
-    margin: 70px 10px;
+    margin: 10px 10px 10px 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 100%;
-    height: 700px;
+    height: 100%;
+    max-height: 700px;
+    min-height: 200px;
+ 
     max-width: 500px;
     min-width: 280px;
     background-color: rgb(248, 248, 248);
@@ -86,11 +89,15 @@ ul{
 
 
 .todo-submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     outline: 0;
     border: none;
     background-color: #4acea3;
     color: #fff;
     width: 50px;
+    height: 40px;
     margin-right: 20px;
     font-size: 22px;
     border-radius: 8px;
@@ -109,7 +116,7 @@ ul{
 .task-item-box{
 padding: 0px;
    margin: 0px;
-max-height: 540px;
+
 overflow: scroll;
 }
 
