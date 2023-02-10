@@ -2,7 +2,7 @@ import { TODO_COOKIE_KEY } from "../constants/todo.js";
 import { appendChildrenList, makeDOMwithProperties } from "../utils/dom.js";
 
 const taskItemBoxDOM = document.getElementsByClassName("task-item-box")[0];
-
+const taskCount = document.getElementsByClassName("task-count")[0];
 // startTodoInfo
 
 export const getItemDOM = (inputValue) => {
@@ -67,6 +67,7 @@ export const getItemDOM = (inputValue) => {
     getLocalInfo.splice(checkInpt.id, 1);
     console.log(getLocalInfo);
     localStorage.setItem(TODO_COOKIE_KEY, JSON.stringify(getLocalInfo));
+    taskCount.innerHTML = `${getLocalInfo.length} task`;
   };
 };
 
