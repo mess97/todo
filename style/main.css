@@ -74,7 +74,7 @@ ul{
 .todo-input {
   outline: 0;
   border: none;
-    width: 100%;
+    width: 75%;
     font-size: 15px;
     padding: 12px 20px;
   
@@ -96,7 +96,7 @@ ul{
     border: none;
     background-color: #4acea3;
     color: #fff;
-    width: 50px;
+    width: 45px;
     height: 40px;
     margin-right: 20px;
     font-size: 22px;
@@ -110,13 +110,13 @@ ul{
 
 .task-item-container{
     display: block;
-  
 
 }
 .task-item-box{
 padding: 0px;
    margin: 0px;
-
+   display: flex;
+   flex-direction: column-reverse;
 overflow: scroll;
 }
 
