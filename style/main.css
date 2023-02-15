@@ -219,8 +219,8 @@ margin-left: auto;
     z-index: 1;
 }
 .modal-container{
-    background-color:rgba(255, 255, 255, 0.554) ;
-    
+    background-color:rgba(255, 255, 255, 0.855) ;
+    backdrop-filter: blur(25px);
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
