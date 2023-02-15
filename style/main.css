@@ -6,6 +6,7 @@ body{
     align-items: center;
     margin: 0px;
     flex-direction: column;
+    overflow: hidden;
    
 }
 ul{
@@ -124,7 +125,7 @@ ul{
 }
 
 .task-item-container{
-    height: 500px;
+    height: 480px;
     overflow: scroll;
 }
 .task-item-box{

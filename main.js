@@ -59,7 +59,7 @@ const deleteList = (index) => {
 const renderTodoList = (newTodo) => {
   //todoList라는 listbox의 값을 비워줌
   todoList.innerHTML = "";
-  input.focus();
+
   count.innerHTML = `${newTodo.length} task`;
   //로컬 스토리지에 KEY의 value 배열 만큼 순회
   newTodo.forEach((item, index) => {
