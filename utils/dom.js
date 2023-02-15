@@ -16,3 +16,11 @@ export const appendChildrenList = (target, childrenList) => {
   //1순환 children=productImage  productImageCon.appendChild(productImage)
   //2순환 children=cardToggleBtn productImageCon.appendChild(cardToggleBtn)
 };
+
+export const get = (element) => {
+  return document.querySelector(element);
+};
+
+export const getAll = (element) => {
+  return document.querySelectorAll(element);
+};

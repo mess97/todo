@@ -1,9 +1,12 @@
+
 body{
     background-image: linear-gradient(102.7deg, #fddaff 8.2%, #dfadfc 19.6%, #adcdfc 36.8%, #adfcf4 73.2%, #caf8d0 90.9%);
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin: 0px;
+    flex-direction: column;
+   
 }
 ul{
     list-style: none;
@@ -37,16 +40,17 @@ ul{
     margin: 10px 10px 10px 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
-    width: 100%;
+    width: 95%;
     height: 100%;
     max-height: 700px;
     min-height: 200px;
- 
+    overflow: hidden;
     max-width: 500px;
     min-width: 280px;
     background-color: rgb(248, 248, 248);
    border-radius: 20px;
-   overflow: hidden;
+
+   
 }
 
 .todo-header{
@@ -109,27 +113,38 @@ ul{
 }
 
 .task-item-container{
-    display: block;
-
+    height: 500px;
+    overflow: scroll;
 }
 .task-item-box{
 padding: 0px;
    margin: 0px;
+   height: 100%;
    display: flex;
    flex-direction: column-reverse;
 overflow: scroll;
+-webkit-overflow-scrolling: touch
 }
 
 .task-item{
 display: flex;
 padding: 10px 20px;
 align-items: center;
-transition: 1s;
+position: relative;
+animation-name: fade-in;
+animation-duration: 1s;
+animation-timing-function: ease;
+}
+@keyframes fade-in{
+
+    0%{opacity: 0.2;
+       }
+    
+    100%{opacity:1;
+        }
 }
 
-.list-check{
-    background-color: #4acea229;
-}
+
 
 .item-check{
     -webkit-appearance: none;
@@ -163,6 +178,7 @@ transition: 1s;
 
 .title-check{
     text-decoration: line-through;
+    background-color: #4acea229;
 }
 
 .task-delete {
@@ -178,4 +194,48 @@ margin-left: auto;
     background-size: cover;
     cursor: pointer;
  margin-right: 10px;
+}
+
+.modal-back{
+    position: absolute;
+    width: 100%;
+    background-color: #00000068;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container{
+    background-color:rgb(248, 248, 248) ;
+    width: 95%;
+    max-width: 500px;
+    min-width: 280px;
+    height: 25%;
+    margin-bottom: 250px;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+.modal-btn{
+cursor: pointer;
+font-size: 16px;
+padding: 10px;
+margin: 10px 5px;
+width: 90px;
+height: 40px;
+border-radius: 10px;
+border: 0px;
+background-color: #4acea3;
+color: white;
 }
