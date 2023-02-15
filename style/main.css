@@ -61,7 +61,7 @@ ul{
 
 
 .todo-header{
-    background-color: rgba(255, 255, 255, 0.311);
+    background-color: rgba(255, 255, 255, 0.659);
     height: 140px;
     padding: 20px 0px;
     
@@ -125,7 +125,7 @@ ul{
 }
 
 .task-item-container{
-    height: 480px;
+    height: 460px;
     overflow: scroll;
 }
 .task-item-box{
@@ -216,15 +216,16 @@ margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .modal-container{
-    background-color:rgba(248, 248, 248, 0) ;
-    backdrop-filter: blur(15px);
+    background-color:rgba(248, 248, 248, 0.205) ;
+    backdrop-filter: blur(20px);
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
     min-width: 280px;
-    height: 25%;
+    height: 20%;
     margin-bottom: 250px;
     animation-name: fade-in;
     animation-duration: 0.5s;
@@ -234,6 +235,7 @@ margin-left: auto;
     align-items: center;
     border-radius: 10px;
     flex-direction: column;
+    z-index: 3;
 }
 .title{
     font-size: 18px;
@@ -243,13 +245,13 @@ margin-left: auto;
 }
 .modal-btn{
 cursor: pointer;
-font-size: 16px;
-padding: 10px;
+font-size: 14px;
+padding: 7px;
 margin: 10px 5px;
 width: 90px;
-height: 40px;
-border-radius: 10px;
+
+border-radius: 15px;
 border: 0px;
-background-color: #4acea269;
+background-color: #4acea2b3;
 color: white;
 }
