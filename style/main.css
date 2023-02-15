@@ -219,7 +219,7 @@ margin-left: auto;
 }
 .modal-container{
     background-color:rgba(248, 248, 248, 0) ;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
