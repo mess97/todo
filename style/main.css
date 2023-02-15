@@ -219,13 +219,14 @@ margin-left: auto;
     z-index: 1;
 }
 .modal-container{
-    background-color:rgba(248, 248, 248, 0.193) ;
-    backdrop-filter: blur(20px);
+    background-color:rgba(255, 255, 255, 0.554) ;
+    
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
     min-width: 280px;
     height: 23%;
+    min-height: 180px;
     margin-bottom: 250px;
     animation-name: fade-in;
     animation-duration: 0.5s;
