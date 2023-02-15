@@ -220,12 +220,12 @@ margin-left: auto;
 }
 .modal-container{
     background-color:rgba(248, 248, 248, 0.193) ;
-  
+    backdrop-filter: blur(20px);
     box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
     min-width: 280px;
-    height: 20%;
+    height: 23%;
     margin-bottom: 250px;
     animation-name: fade-in;
     animation-duration: 0.5s;
@@ -238,9 +238,10 @@ margin-left: auto;
     z-index: 3;
 }
 .title{
+    padding: 20px;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 20px;
+  
 
 }
 .modal-btn{
