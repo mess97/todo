@@ -218,7 +218,9 @@ margin-left: auto;
     align-items: center;
 }
 .modal-container{
-    background-color:rgb(248, 248, 248) ;
+    background-color:rgba(248, 248, 248, 0) ;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 80px rgb(0 0 0 / 30%);
     width: 95%;
     max-width: 500px;
     min-width: 280px;
@@ -248,6 +250,6 @@ width: 90px;
 height: 40px;
 border-radius: 10px;
 border: 0px;
-background-color: #4acea3;
+background-color: #4acea269;
 color: white;
 }
