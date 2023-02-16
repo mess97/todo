@@ -184,7 +184,9 @@ animation-timing-function: ease;
 .item-title{
     font-size: 15px;
     padding: 10px;
+    width: 77%;
     max-width: 360px;
+    min-width: 220px;
     word-wrap: break-word;
 }
 
